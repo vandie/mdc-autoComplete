@@ -30,7 +30,8 @@ class MDCautoCompleteFoundation extends MDCFoundation {
             setInputText: (/* text: string */) => {},
             registerInteractionHandler: (/* type: string, handler: EventListener */) => {},
             deregisterInteractionHandler: (/* type: string, handler: EventListener */) => {},
-            blurInput: () => {}
+            blurInput: () => {},
+            ev: (/* e: event */) => {}
         };
       }
     
@@ -105,7 +106,7 @@ class MDCautoCompleteFoundation extends MDCFoundation {
             this.mostLikely[this.searchAttribute] = this.input.value
         }
         var newBestGuess = new CustomEvent("newBestGuess", { guess: this.mostLikely })
-        this.root.dispatchEvent(newBestGuess)
+        this.adapter_.ev(newBestGuess)
     }
 
     getGuessText() {

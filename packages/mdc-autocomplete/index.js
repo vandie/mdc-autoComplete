@@ -44,7 +44,8 @@ class autoComplete extends MDCComponent {
         setInputText: textContent => { this.root_.querySelector('input').value = textContent },
         registerInteractionHandler: (type, handler) => this.root_.addEventListener(type, handler),
         deregisterInteractionHandler: (type, handler) => this.root_.removeEventListener(type, handler),
-        blurInput: () => this.root_.querySelector('input').blur()
+        blurInput: () => this.root_.querySelector('input').blur(),
+        ev: (e) => this.root_.dispatchEvent(e)
       })
     }
   }
