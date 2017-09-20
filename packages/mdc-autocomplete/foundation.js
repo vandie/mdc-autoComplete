@@ -88,7 +88,11 @@ class MDCautoCompleteFoundation extends MDCFoundation {
             let res = this.search(this.SearchArray,this.input.value,this.searchAttribute)
             this.setBestGuess(res)
         }
-        this.adapter_.setMostLikelySpan( this.getGuessText() )
+        if(lastMostLikely != this.mostLikely){
+            this.adapter_.setMostLikelySpan( this.getGuessText() )
+            var newBestGuess = new CustomEvent("newBestGuess", { detail: { guess: this.mostLikely } })
+            this.adapter_.ev(newBestGuess)
+        }
     }
 
     getBestGuess() {
@@ -105,8 +109,6 @@ class MDCautoCompleteFoundation extends MDCFoundation {
             this.mostLikely = {}
             this.mostLikely[this.searchAttribute] = this.input.value
         }
-        var newBestGuess = new CustomEvent("newBestGuess", { guess: this.mostLikely })
-        this.adapter_.ev(newBestGuess)
     }
 
     getGuessText() {
