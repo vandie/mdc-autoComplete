@@ -43,5 +43,14 @@ var ac = new autoComplete(document.querySelector('.mdc-autocomplete'))
 ac.searchArray = arr
 ```
 
+You may also like to force the user to use any autocompleted option. This can be done by adding `ForceComplete=true` to the mdc-autocomplete element like so.
+```
+<div class="mdc-textfield mdc-autocomplete" ForceComplete=true>
+    <input type="text" id="my-textfield" class="mdc-textfield__input">
+    <label class="mdc-textfield__label" for="my-textfield">Autocomplete Test</label>
+    <span class='mdc-autocomplete__span'></span>
+</div>
+```
+
 ## Events
 Although there is an event detailed in the engineering outline. It is unfortunatly not yet implemented.
