@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../node_modules/material-components-web/dist/material-components-web.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../autocomplete.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="mdc-textfield mdc-autocomplete" searchAttribute='key' SearchArray='arr'>
+                <input type="text" id="my-textfield" class="mdc-textfield__input">
+                <label class="mdc-textfield__label" for="my-textfield">Autocomplete Test</label>
+                <span class='mdc-autocomplete__span'></span>
+            </div>
+        </main>
+        <script src="../node_modules/material-components-web/dist/material-components-web.js"></script>
+        <script src ="../prototype-autocomplete.js"></script>
+        <script>
+            var arr = [
+                {key: 'blue'},
+                {key: 'red'}
+            ]
+            mdc.textfield.MDCTextfield.attachTo(document.querySelector('.mdc-textfield'))
+            new autoCompletePrototype(document.querySelector('.mdc-autocomplete'))
+        </script>
+    </body>
+</html>
