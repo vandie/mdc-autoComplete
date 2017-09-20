@@ -60,3 +60,6 @@ You may also like to force the user to use any autocompleted option. This can be
 
 ## Events
 Although there is an event detailed in the engineering outline. It is unfortunatly not yet implemented.
+
+## Theming
+Theming requires the scss to be complete (currently not)
