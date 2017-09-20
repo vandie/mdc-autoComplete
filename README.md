@@ -2,7 +2,7 @@
 [Component Egineering Outline](https://docs.google.com/document/d/19ZCzqEHSoqN7k47l6PwUXT7zH82gUbCSRFPOJo7DxBw/edit?usp=sharing)
 
 ## Example
-![Test gif](https://drive.google.com/file/d/0BzIBN3SXLMVTV05wanBGU1FialE/view?usp=sharing)
+![Test gif](hhttps://lh5.googleusercontent.com/W-6_ADWY0l5XD1Ms90SYDXuWjmtbENDvEw_2AtkzUwXxJQP4_MBahCmBmWPL6Qu_39QPP0tN1QVNdII=w2772-h1550)
 
 [Example usage](https://codepen.io/vandie/pen/jGbgvQ)
 
