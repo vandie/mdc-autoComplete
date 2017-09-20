@@ -40,5 +40,5 @@ var ac = new autoComplete(document.querySelector('.mdc-autocomplete'))
 ac.searchArray = arr
 ```
 
-##Events
+## Events
 Although there is an event detailed in the engineering outline. It is unfortunatly not yet implemented.
