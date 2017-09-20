@@ -1,4 +1,6 @@
 # AutoComplete Component
+Designed to be 100% compatible with [MDC for Web](https://github.com/material-components/material-components-web)
+
 [Component Egineering Outline](https://docs.google.com/document/d/19ZCzqEHSoqN7k47l6PwUXT7zH82gUbCSRFPOJo7DxBw/edit?usp=sharing)
 
 ## Example
@@ -43,7 +45,8 @@ var ac = new autoComplete(document.querySelector('.mdc-autocomplete'))
 ac.searchArray = arr
 ```
 
-You may also like to force the user to use any autocompleted option. This can be done by adding `ForceComplete=true` to the mdc-autocomplete element like so.
+You may also like to force the user to use any autocompleted option. This can be done by adding `ForceComplete=true` to the mdc-autocomplete element like so:
+
 ```
 <div class="mdc-textfield mdc-autocomplete" ForceComplete=true>
     <input type="text" id="my-textfield" class="mdc-textfield__input">
