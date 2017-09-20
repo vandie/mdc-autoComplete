@@ -1,3 +1,8 @@
+/*
+    Prototype developed by Michael Van Der Velden
+    twitter: @mvd_vandie
+    github: @vandie
+*/
 class autoCompletePrototype {
     
         constructor(root,searchArr) {

@@ -23,10 +23,6 @@ class autoComplete extends MDCComponent {
       this.foundation_.setSearchArray(arr)
     }
 
-    set bestGuess(guess) {
-        this.foundation_.setBestGuess(guess)
-    }
-
     get searchArray() {
         return this.foundation_.getSearchArray()
     }
