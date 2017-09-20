@@ -3,7 +3,7 @@
 
 [Example usage](https://codepen.io/vandie/pen/jGbgvQ)
 
-##Basic Usage
+## Basic Usage
 For basic usage put the autocomplete class in the textfeild div and and add the autocomplete span as shown below.
 ```
 <div class="mdc-textfield mdc-autocomplete">
@@ -22,7 +22,7 @@ x.searchArray = arr;
 
 Your autocomplete should now function.
 
-##Better Usage
+## Better Usage
 It's unlikely that you would just want string data in your auto complete. You may (for example) require an avatar to apear when a valid email has been typed in. This can be done using the `searchAttribute` attribute on the mdc-autocomplete div and a slight modification to your array. Example below.
 ```
 <div class="mdc-textfield mdc-autocomplete" searchAttribute='email'>
