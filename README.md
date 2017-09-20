@@ -1,4 +1,7 @@
 # AutoComplete Component
+
+Follows the Material design spec as seen [here](https://material.io/guidelines/components/text-fields.html#text-fields-layout)
+
 Designed to be 100% compatible with [MDC for Web](https://github.com/material-components/material-components-web)
 
 [Component Egineering Outline](https://docs.google.com/document/d/19ZCzqEHSoqN7k47l6PwUXT7zH82gUbCSRFPOJo7DxBw/edit?usp=sharing)
