@@ -30,6 +30,10 @@ class autoComplete extends MDCComponent {
     get bestGuess() {
         return this.foundation_.mostLikely
     }
+
+    static attachTo(root) {
+        return new MDCNewComponent(root);
+    }
   
     getDefaultFoundation() {
       return new MDCautoCompleteFoundation({
