@@ -35,7 +35,7 @@ class MDCautoCompleteFoundation extends MDCFoundation {
       }
     
     constructor(adapter) {
-        super(Object.assign(autoCompleteFoundation.defaultAdapter, adapter))
+        super(Object.assign(MDCautoCompleteFoundation.defaultAdapter, adapter))
         this.typeHandler1_ = (event) => { this.autoComplete() }
         this.typeHandler2_ = (event) => { this.handle(event) }
         this.typeHandler3_ = (event) => { this.selectComplete() }
@@ -104,6 +104,8 @@ class MDCautoCompleteFoundation extends MDCFoundation {
             this.mostLikely = {}
             this.mostLikely[this.searchAttribute] = this.input.value
         }
+        var newBestGuess = new CustomEvent("newBestGuess", { guess: this.mostLikely })
+        this.root.dispatchEvent(newBestGuess)
     }
 
     getGuessText() {

@@ -32,7 +32,7 @@ class autoComplete extends MDCComponent {
     }
 
     static attachTo(root) {
-        return new MDCNewComponent(root);
+        return new MDCautoCompleteFoundation(root);
     }
   
     getDefaultFoundation() {
