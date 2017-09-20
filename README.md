@@ -1,6 +1,8 @@
 # AutoComplete Component
 [Component Egineering Outline](https://docs.google.com/document/d/19ZCzqEHSoqN7k47l6PwUXT7zH82gUbCSRFPOJo7DxBw/edit?usp=sharing)
 
+## Example
+![Test gif](https://drive.google.com/file/d/0BzIBN3SXLMVTV05wanBGU1FialE/view?usp=sharing)
 [Example usage](https://codepen.io/vandie/pen/jGbgvQ)
 
 ## Basic Usage
