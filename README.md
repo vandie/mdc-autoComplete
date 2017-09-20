@@ -9,7 +9,7 @@ Designed to be 100% compatible with [MDC for Web](https://github.com/material-co
 [Example usage](https://codepen.io/vandie/pen/jGbgvQ)
 
 ## Basic Usage
-For basic usage put the autocomplete class in the textfeild div and and add the autocomplete span as shown below.
+For basic usage put the autocomplete class in the textfield div and and add the autocomplete span as shown below.
 ```
 <div class="mdc-textfield mdc-autocomplete">
     <input type="text" id="my-textfield" class="mdc-textfield__input">
