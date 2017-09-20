@@ -3,6 +3,7 @@
 
 ## Example
 ![Test gif](https://drive.google.com/file/d/0BzIBN3SXLMVTV05wanBGU1FialE/view?usp=sharing)
+
 [Example usage](https://codepen.io/vandie/pen/jGbgvQ)
 
 ## Basic Usage
