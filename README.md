@@ -68,3 +68,7 @@ document.querySelector('.mdc-autocomplete').addEventListener("newBestGuess",func
 
 ## Theming
 This component uses the hint color from your current theme. More info on theming can be found [here](https://material.io/components/web/catalog/theme/)
+
+![Light Theme](https://github.com/vandie/mdc-autoComplete/raw/master/images/light.png)
+
+![Dark Theme](https://github.com/vandie/mdc-autoComplete/raw/master/images/dark.png)
