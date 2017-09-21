@@ -1,14 +1,31 @@
 
+@import "@material/rtl/mixins";
+@import "@material/theme/variables";
+@import "@material/theme/mixins";
+@import "@material/typography/mixins";
+@import "@material/typography/variables";
+
 .mdc-autocomplete {
-    // ...
-  
+
     &__span {
-        color: rgba(0, 0, 0, 0.38);
-        color: var(--mdc-theme-text-hint-on-light, rgba(0, 0, 0, 0.38));
+        @include mdc-typography-base;
+        @each $prop in (font-size, letter-spacing) {
+            #{$prop}: map-get(map-get($mdc-typography-styles, subheading2), $prop);
+        };
+
         position: absolute;
         bottom: 8px;
         left: 0;
-        font-size: 1rem;
-        letter-spacing: 0.04em;
+        transform-origin: left top;
+
+        @include mdc-theme-prop(color, text-hint-on-light); 
+        @include mdc-theme-dark {
+            @include mdc-theme-prop(color, text-hint-on-dark);
+        }
+        @include mdc-rtl {
+            right: 0;
+            left: auto;
+            transform-origin: right top;
+        }
     }
   }

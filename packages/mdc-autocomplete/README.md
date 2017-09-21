@@ -67,4 +67,4 @@ document.querySelector('.mdc-autocomplete').addEventListener("newBestGuess",func
 ```
 
 ## Theming
-This component uses the hint color from your current theme. More info on theming can be found [here](https://material.io/components/web/catalog/theme/)
+Theming requires the scss to be complete (currently not)
