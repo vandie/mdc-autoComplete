@@ -41,7 +41,7 @@ It's unlikely that you would just want string data in your auto complete. You ma
 ```
 Then in your initiation of the component, do this instead.
 ```javascript
-var arr = [{email:'eg1@eg.test',avatar:blue.png},{email:'eg2@eg.test',avatar:red.png},{email:'eg3@eg.test',avatar:green.png},{email:'eg4@eg.test',avatar:yellow.png}]//an array of objects
+var arr = [{email:'eg1@eg.test',avatar:'blue.png'},{email:'eg2@eg.test',avatar:'red.png'},{email:'eg3@eg.test',avatar:'green.png'},{email:'eg4@eg.test',avatar:'yellow.png'}]//an array of objects
 
 var ac = MDCAutoComplete.attachTo(document.querySelector('.mdc-autocomplete')) //init the autocomplete element
 
