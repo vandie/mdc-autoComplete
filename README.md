@@ -11,6 +11,9 @@ Designed to be 100% compatible with [MDC for Web](https://github.com/material-co
 
 [Example usage](https://codepen.io/vandie/pen/jGbgvQ)
 
+## Intallation
+This respository was created because I needed it for my own projects and it was not yet in MDC. I am hoping that they will adopt it and as such I have not created any builds outside my own or released it to NPM so as to avoid confusion. To install you can go to the above codepen and copy the script above `//Install code above here` to your own script then build the scss alongside all other MDC scss. Sorry if this isn't as easy as you'd hope...
+
 ## Basic Usage
 For basic usage put the autocomplete class in the textfield div and and add the autocomplete span as shown below.
 ```HTML
