@@ -122,6 +122,7 @@ class MDCautoCompleteFoundation extends MDCFoundation {
     }
 
     selectComplete() {
+        this.adapter_.setMostLikelySpan ( this.getGuessText()  )
         this.adapter_.setInputText ( this.getGuessText()  )
         this.adapter_.blurInput()
     }
