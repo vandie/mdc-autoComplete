@@ -24,7 +24,7 @@ For basic usage put the autocomplete class in the textfield div and and add the 
 Next you need to initiate the component and requires you to set a search array.
 ```javascript
 var arr = ['blue','red','green']//an array of strings
-var x = new MDCAutoComplete(document.querySelector('.mdc-autocomplete'))//init the autocomplete
+var x = MDCautoComplete.attachTo(document.querySelector('.mdc-autocomplete'))//init the autocomplete
 x.searchArray = arr;// set the search array
 ```
 
@@ -43,7 +43,7 @@ Then in your initiation of the component, do this instead.
 ```javascript
 var arr = [{email:'eg1@eg.test',avatar:blue.png},{email:'eg2@eg.test',avatar:red.png},{email:'eg3@eg.test',avatar:green.png},{email:'eg4@eg.test',avatar:yellow.png}]//an array of objects
 
-var ac = new MDCAutoComplete(document.querySelector('.mdc-autocomplete')) //init the autocomplete element
+var ac = MDCAutoComplete.attachTo(document.querySelector('.mdc-autocomplete')) //init the autocomplete element
 
 ac.searchArray = arr//set the search array for the autocomplete
 ```
