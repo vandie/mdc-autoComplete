@@ -18,7 +18,7 @@ import {MDCComponent} from '@material/base'
 import MDCautoCompleteFoundation from './foundation'
 export {MDCautoCompleteFoundation}
 
-class autoComplete extends MDCComponent {
+class MDCAutoComplete extends MDCComponent {
     set searchArray(arr) {
       this.foundation_.setSearchArray(arr)
     }
