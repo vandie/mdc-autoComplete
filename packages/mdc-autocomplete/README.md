@@ -34,9 +34,9 @@ x.searchArray = arr;// set the search array
 Your autocomplete should now function.
 
 ## Better Usage
-It's unlikely that you would just want string data in your auto complete. You may (for example) require an avatar to apear when a valid email has been typed in. This can be done using the `data-mdc-searchAttribute` attribute on the mdc-autocomplete div and a slight modification to your array. Example below.
+It's unlikely that you would just want string data in your auto complete. You may (for example) require an avatar to apear when a valid email has been typed in. This can be done using the `data-mdc-autocomplete-searchAttribute` attribute on the mdc-autocomplete div and a slight modification to your array. Example below.
 ```HTML
-<div class="mdc-textfield mdc-autocomplete" data-mdc-searchAttribute='email'>
+<div class="mdc-textfield mdc-autocomplete" data-mdc-autocomplete-searchAttribute='email'>
     <input type="text" id="my-textfield" class="mdc-textfield__input">
     <label class="mdc-textfield__label" for="my-textfield">Autocomplete Test</label>
     <span class='mdc-autocomplete__span'></span>
@@ -51,10 +51,10 @@ var ac = MDCAutoComplete.attachTo(document.querySelector('.mdc-autocomplete')) /
 ac.searchArray = arr//set the search array for the autocomplete
 ```
 
-You may also like to force the user to use any autocompleted option. This can be done by adding `data-mdc-forceComplete=true` to the mdc-autocomplete element like so:
+You may also like to force the user to use any autocompleted option. This can be done by adding `data-mdc-autocomplete-forceComplete=true` to the mdc-autocomplete element like so:
 
 ```HTML
-<div class="mdc-textfield mdc-autocomplete" data-mdc-forceComplete=true>
+<div class="mdc-textfield mdc-autocomplete" data-mdc-autocomplete-forceComplete=true>
     <input type="text" id="my-textfield" class="mdc-textfield__input">
     <label class="mdc-textfield__label" for="my-textfield">Autocomplete Test</label>
     <span class='mdc-autocomplete__span'></span>

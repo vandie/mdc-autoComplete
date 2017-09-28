@@ -41,11 +41,11 @@ class MDCautoCompleteFoundation extends MDCFoundation {
         this.typeHandler1_ = (event) => { this.autoComplete() }
         this.typeHandler2_ = (event) => { this.handle(event) }
         this.typeHandler3_ = (event) => { this.selectComplete() }
-        this.forceChange = this.adapter_.getAttr('data-mdc-forceComplete')
+        this.forceChange = this.adapter_.getAttr('data-mdc-autocomplete-forceComplete')
         this.input = this.adapter_.getChild('input')
         this.autospan = this.adapter_.getChild(strings.AUTOCOMPLETESPAN_SELECTOR)
         this.SearchArray = []
-        this.searchAttribute = this.adapter_.getAttr('data-mdc-searchAttribute') ? this.adapter_.getAttr('data-mdc-searchAttribute') : false
+        this.searchAttribute = this.adapter_.getAttr('data-mdc-autocomplete-searchAttribute') ? this.adapter_.getAttr('data-mdc-searchAttribute') : false
         this.mostLikely = {}
         this.mostLikely[this.searchAttribute] = ""
         this.init()
