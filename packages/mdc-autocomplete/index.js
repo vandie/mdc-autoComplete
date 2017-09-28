@@ -38,7 +38,7 @@ class MDCAutoComplete extends MDCComponent {
     getDefaultFoundation() {
       return new MDCautoCompleteFoundation({
         getAttr: attr => this.root_.getAttribute(attr),
-        setAttr: (attr, value) => this.root_.setAttribute(attr, value),
+        setAttr: (item,attr, value) => item.setAttribute(attr, value),
         getChild: (searchFor) => this.root_.querySelector(searchFor),
         setMostLikelySpan: textContent => { this.root_.querySelector(MDCautoCompleteFoundation.strings.AUTOCOMPLETESPAN_SELECTOR).innerHTML = textContent },
         setInputText: textContent => { this.root_.querySelector('input').value = textContent },

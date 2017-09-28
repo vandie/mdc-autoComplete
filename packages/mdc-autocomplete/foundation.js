@@ -25,7 +25,7 @@ class MDCautoCompleteFoundation extends MDCFoundation {
     static get defaultAdapter() {
         return {
             getAttr: (/* attr: string */) => /* string */ '',
-            setAttr: (/* attr: string, value: string */) => {},
+            setAttr: (/* item: Dom Element, attr: string, value: string */) => {},
             getChild : (/* searchFor: string */) => {},
             setMostLikelySpan: (/* textContent: string */) => {},
             setInputText: (/* text: string */) => {},
@@ -56,6 +56,8 @@ class MDCautoCompleteFoundation extends MDCFoundation {
         this.adapter_.registerInteractionHandler('keydown', this.typeHandler2_)
         if(this.forceChange)
             this.adapter_.registerInteractionHandler('change', this.typeHandler3_)
+        this.adapter_.setAttr(this.input,'aria-autocomplete','inline')
+        this.adapter_.setAttr(this.autospan,'aria-live','polite')
     }
 
     setSearchArray(arr) {
@@ -70,6 +72,8 @@ class MDCautoCompleteFoundation extends MDCFoundation {
         this.adapter_.deregisterInteractionHandler('keyup')
         this.adapter_.deregisterInteractionHandler('keydown')
         this.adapter_.deregisterInteractionHandler('change')
+        this.adapter_.setAttr(this.input,'aria-autocomplete',undefined)
+        this.adapter_.setAttr(this.autospan,'aria-live',undefined)
     }
 
     search(arr,searchTerm,variable) {
